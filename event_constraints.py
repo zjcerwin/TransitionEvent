@@ -7,7 +7,7 @@ from str_utils import capitalize_first_char, normalize_tok, normalize_sent, coll
 
 class EventConstraint(object):
     '''
-       with predicted event types and entity types, this class is used to make sure their resulting argument roles are obey event constraints. 
+       This class is used to make sure that (event types, entity types) -> (argument roles) obey event constraints. 
     '''
 
     def __init__(self, ent_dict, tri_dict, arg_dict):
